@@ -1,5 +1,6 @@
-
 const path = require('path');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -12,7 +13,6 @@ module.exports = {
     filename: 'bundle.min.js'
   },
   module: {
-    
     rules: [
       { 
         test: /\.tsx?$/, 
@@ -20,4 +20,9 @@ module.exports = {
       }
     ]
   }
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
+  ]
 }
