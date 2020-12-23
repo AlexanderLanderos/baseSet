@@ -19,7 +19,7 @@ module.exports = {
         loader: 'ts-loader'
       }
     ]
-  }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
