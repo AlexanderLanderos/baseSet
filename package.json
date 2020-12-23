@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --mode development", 
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,12 @@
     "url": "https://github.com/AlexanderLanderos/baseSet/issues"
   },
   "homepage": "https://github.com/AlexanderLanderos/baseSet#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "devDependencies": {
     "ts-loader": "^8.0.12",
     "typescript": "^4.1.3",
